@@ -12,9 +12,7 @@ export function runSearch() {
 
     let userInput = readline.question('Search tweets, or EXIT to quit: ');
 
-    console.log('Im working');
-
-    if(userInput === 'EXIT') {
+    if(userInput == 'EXIT') {
         return;
     }
 
