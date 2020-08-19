@@ -5,15 +5,15 @@
 class Task {
 
   constructor(newDescString, newIsComplete){
-    this.descString = newDescString;
-    this.isComplete = newIsComplete;
+    this.description = newDescString;
+    this.complete = newIsComplete;
   }
 
   render() {
     let elem = document.createElement('li');
-    elem.textContent = this.descString;
+    elem.textContent = this.description;
 
-    if(this.isComplete){
+    if(this.complete){
       elem.classList.add('font-strike');
     }
 
@@ -26,7 +26,7 @@ class Task {
   }
 
   toggleFinished() {
-    this.isComplete = !this.isComplete;
+    this.complete = !this.complete;
   }
 }
 
